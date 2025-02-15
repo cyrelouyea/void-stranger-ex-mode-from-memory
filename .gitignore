@@ -1,0 +1,18 @@
+# Ignore all PNG images in subfolders except those starting with "ev_"
+sprites/**/*.png
+!sprites/spr_ev_*/**/*.png
+
+# Ignore all WAV files in subfolders except those starting with "ev_"
+sounds/**/*.wav
+!sounds/snd_ev_*/**/*.wav
+
+# Ignore all images in the tilesets folder
+tilesets/**/*.png
+
+projectscripts/temp
+projectscripts/cache
+projectscripts/data.win
+projectscripts/output
+projectscripts/variables.sh
+projectscripts/variables.bat
+projectscripts/*.plist

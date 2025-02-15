@@ -1,0 +1,3 @@
+// TARGET: LINENUMBER_REPLACE
+// 27
+if (false)

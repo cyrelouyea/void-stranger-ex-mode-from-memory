@@ -1,0 +1,10 @@
+counter = 0
+delay = 300
+var inst = instance_create_layer(0, 0, "Instances", asset_get_index("obj_voidshatter"))
+inst.depth -= 2
+inst.special_shard = 1
+inst.x = 0
+inst.y = 0
+white_alpha = 0
+black_alpha = 0
+global.start_song_time = 0
