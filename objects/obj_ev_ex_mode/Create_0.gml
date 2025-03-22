@@ -181,8 +181,12 @@ function prepare_pack() {
 }
 
 function start() {
-	prepare_pack();
-	room_goto(asset_get_index("rm_ev_level"));
+	if (!file_exists(global.save_directory + "settings.vs")) {
+		room_goto(asset_get_index("rm_0"));
+	} else {
+		prepare_pack();
+		room_goto(asset_get_index("rm_ev_level"));
+	}
 }
 
 start()
